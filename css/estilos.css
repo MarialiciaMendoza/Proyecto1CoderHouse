@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*
+#0096ff ==> azul
+#ffd200 ==> amarillo
+#2d3f99 ==> oscuro
+*/
+
+/*HEADER*/
+header{
+    height: 100px;
+    background-color: #0096ff;
+    position: sticky;
+    top: 0px;
+}
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul, footer ul{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+nav li, footer li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+.container_logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+.logo{
+    height: 100%;
+    width: 150%;
+    align-items: center;
+}
+
+/*MAIN*/
+h1{
+    color: #ffd200;
+    font-size: 7rem;
+}
+.laboratorio{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.nosotros{
+    background-color: #0096ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.texto_nosotros{
+    width: 800px;
+    font-size: 2rem;
+    margin-left: 30px;
+    color: white;
+    padding: 50px;
+}
+
+/*SERVICIOS*/
+.subtitulo_servicios{
+    color: #ffd200;
+    display: flex;
+    font-size: 7rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.container_servicios{
+    display: flex;
+    justify-content: space-around;
+}
+.servicios{
+    background-color: #0096ff;
+    border: 5px solid #ffd200;
+    color: white;
+    padding: 30px;
+    width: 200px;
+    display: inline;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+/*EQUIPO*/
+.subtitulo_equipo{
+    color: #ffd200;
+    display: flex;
+    font-size: 7rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container_equipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.container_foto{
+    display: flex;
+    flex-direction: column;
+}
+.foto{
+    height: 500px;
+}
+.nombre{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #2d3f99;
+    width: 100%;
+    padding-bottom: 10px;
+}
+footer p, footer li{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.derechos_protegidos{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.ubicacion{
+    margin-left: 50px;
+}
+.contacto{
+    display:flex;
+    margin-bottom: 50px;
+}
+
+/* SECCION NOSOTROS */
+.seccion_nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.contenido{
+    width: 800px;
+    font-size: 2rem;
+    margin-left: 30px;
+    color: black;
+    padding: 50px; 
+}
+h2{
+    color: #ffd200;
+    font-size: 7rem; 
+    text-align: center;
+}
+
+/* SECCION SERVICIOS */
+.contenido_servicios{
+    width: 100%;
+    font-size: 2rem;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* SECCION CLIENTES */
+.contenido_clientes{
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
