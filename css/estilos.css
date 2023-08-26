@@ -16,42 +16,26 @@ html{
 /*HEADER*/
 header{
     height: 100px;
-    background-color: #0096ff;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
-nav{
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+a:visited {
+    color:#ffd200;
 }
-
-nav ul, footer ul{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-nav li, footer li{
-    list-style: none;
-}
-a{
-    color: white;
-    text-decoration: none;
+.estilos_nav{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,63,153,1) 50%, rgba(0,150,255,1) 100%);
     font-size: 2.5rem;
 }
-.container_logo{
-    height: 100px;
-    width: 100px;
-    margin-left: 50px;
-}
 .logo{
-    height: 100%;
-    width: 150%;
-    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+nav ul {
+    width: 100%;
+    color: #ffd200;
+    justify-content: end;
 }
 
 /*MAIN*/
@@ -59,15 +43,13 @@ h1{
     color: #ffd200;
     font-size: 7rem;
 }
-.laboratorio{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
+.img-fluid{
+    max-width: 100%;
+    height: auto;
 }
 .nosotros{
-    background-color: #0096ff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,63,153,1) 50%, rgba(0,150,255,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +58,7 @@ h1{
 }
 .texto_nosotros{
     width: 800px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 30px;
     color: white;
     padding: 50px;
@@ -92,19 +74,15 @@ h1{
     margin-bottom: 50px;
     margin-top: 50px;
 }
-.container_servicios{
-    display: flex;
-    justify-content: space-around;
-}
-.servicios{
-    background-color: #0096ff;
+.col{
+    background-color: #2d3f99;
+    text-align: center;
+    font-size: 30px;
     border: 5px solid #ffd200;
-    color: white;
-    padding: 30px;
-    width: 200px;
-    display: inline;
-    font-size: 2rem;
-    margin-left: 30px;
+    color: white; 
+    height: 100px;
+    width: 350px;
+    margin: 30px;
 }
 
 /*EQUIPO*/
@@ -136,14 +114,22 @@ h1{
 
 /*FOOTER*/
 footer{
-    background-color: #2d3f99;
+    background-color: #0096ff;
     width: 100%;
     padding-bottom: 10px;
+}
+footer ul{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 footer p, footer li{
     font-size: 2rem;
     color: white;
     text-align: center;
+    list-style: none;
 }
 .derechos_protegidos{
     padding-top: 50px;
@@ -157,42 +143,55 @@ footer p, footer li{
     margin-bottom: 50px;
 }
 
-/* SECCION NOSOTROS */
+/* PAGINA NOSOTROS */
+.grid_container{
+    display: grid;
+    grid-template-areas: "header header header" "menu main aside" "footer footer footer";
+}
+.item1{
+   grid-area: header;
+}
+.item2{
+    grid-area: menu;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: aside;
+}
+.item5{
+    grid-area: footer;
+}
 .seccion_nosotros{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    margin-top: 20px;
+    margin-top: 100px;
+    font-size: 2.5rem;
 }
 .contenido{
     width: 800px;
-    font-size: 2rem;
-    margin-left: 30px;
     color: black;
-    padding: 50px; 
+    padding: 50px;
 }
 h2{
     color: #ffd200;
     font-size: 7rem; 
-    text-align: center;
 }
 
-/* SECCION SERVICIOS */
+/* PAGINA SERVICIOS */
 .contenido_servicios{
-    width: 100%;
-    font-size: 2rem;
-    margin-left: 30px;
+    font-size: 2.5rem;
     color: black;
-    margin-bottom: 30px;
+    margin: 50px 100px 100px 100px;
 }
 
-/* SECCION CLIENTES */
-.contenido_clientes{
+/* PAGINA CLIENTES */
+.carousel-item{
     width: 100%;
-    font-size: 2rem;
-    margin: auto;
-    text-align: center;
-    color: black;
-    margin-bottom: 30px;
+    height: 100%;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
