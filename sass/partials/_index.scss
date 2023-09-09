@@ -1,0 +1,91 @@
+@use "variables";
+
+div{
+    .img-fluid{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// NOSOTROS
+.nosotros{
+    h1{
+        color: variables.$yellow;
+        font-size: variables.$sizeL;
+        display: flex;
+        margin-left: 50px;
+    }
+    .texto_nosotros{
+        width: 800px;
+        font-size: variables.$sizeS;
+        color: white;
+        padding: 50px;
+    }
+    @include variables.d-center;
+    background: variables.$bg-deg;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+@media (min-width:320px) and (max-width:1024px){
+    .nosotros{
+        h1{
+            margin-top: 50px;
+            font-size: variables.$sizeM;
+        }
+        .texto_nosotros{
+            font-size: variables.$sizeXs;
+        }
+    }
+}
+
+// SERVICIOS
+.subtitulo_servicios{
+    @include variables.d-center;
+    color: variables.$yellow;
+    font-size: variables.$sizeL;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.col{
+    background-color: variables.$celeste;
+    text-align: center;
+    font-size: variables.$sizeM;
+    border: 5px solid variables.$yellow;
+    color: white; 
+    height: 100%;
+    margin: 50px 100px 50px 100px;
+}
+
+@media (min-width:320px) and (max-width:1024px){
+    .col{
+        font-size: variables.$sizeXs;
+    }
+}
+
+// EQUIPO
+section{
+    .subtitulo_equipo{
+        @include variables.d-center;
+        color: variables.$yellow;
+        font-size: variables.$sizeL;
+        margin: 50px;
+    }
+    .container_equipo{
+        .container_foto{
+            .nombre{
+                font-size: variables.$sizeXs;
+                text-align: center;
+            }
+            .foto{
+                height: 300px;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+        @include variables.d-center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+}

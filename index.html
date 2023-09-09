@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="laboratorio consultor externo en el área de análisis microbiológico de aguas, alimentos y materia prima">
+    <meta name="keywords" content="LABORATORIOS, MICROBIOLOGIA, ANALISIS, FISICO-QUIMICO, BROMATOLOGIA, MATERIA PRIMA, AGUAS, PRODUCTO TERMINADO">
+    <title>Home-Innolab</title>
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&family=Mitr:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    
     <!--css main-->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
@@ -18,7 +22,7 @@
         <nav class="navbar navbar-expand-lg estilos_nav">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
-                    <img class="logo" src="./img/logoinnolab.jpeg" alt="logo" width="30" height="24">
+                    <img class="logo" src="./img/logoinnolab.jpeg" alt="logo" width="20" height="15">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,18 +30,18 @@
                 </button>
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav ">
+                        <ul class="nav">
                             <li class="nav-item">
                                 <a class="nav-link active" href="./pages/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                                <a class="nav-link active" href="./pages/servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/equipo.html">Equipo</a>
+                                <a class="nav-link active" href="./pages/equipo.html">Equipo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/clientes.html">Clientes</a>
+                                <a class="nav-link active" href="./pages/clientes.html">Clientes</a>
                             </li>
                         </ul>
                     </div>
@@ -46,11 +50,10 @@
         </nav>
     </header>
     <main>
-        <div class="laboratorio">
+        <div>
             <img src="./img/laboratorio.jpg" class="img-fluid" alt="laboratorio">
         </div>
-        <section>
-            <article class="nosotros">
+        <section class="nosotros" data-aos="zoom-in-up">
                 <h1>Nosotros</h1>
                 <div class="texto_nosotros">
                     INNOLAB S.A. nace como un laboratorio consultor externo en el área de análisis microbiológico de
@@ -61,34 +64,31 @@
                     decisiones, con el fin de mejorar la calidad de sus productos y beneficiar así directamente al
                     consumidor final.
                 </div>
-            </article>
         </section>
     </main>
     <section>
-        <article>
-            <h2 class="subtitulo_servicios">Servicios</h2>
+        <h2 class="subtitulo_servicios">Servicios</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col col-lg-4 col-md-6 col-sm-12">Analisis Microbiológico de Aguas y Alimentos</div>
-                    <div class="col col-lg-4 col-md-6 col-sm-12">Analisis Físico-Químico del Agua</div>
-                    <div class="col col-lg-4 col-md-12 col-sm-12">Analisis Bromatológicos de los Alimentos</div>
-                </div>
-        </article>
-    </section>
-    <section>
-        <article>
-            <h2 class="subtitulo_equipo">Equipo</h2>
-            <div class="container_equipo">
-                <div class="container_foto">
-                    <p class="nombre">Alicia Mendoza</p>
-                    <img class="foto" src="./img/alicia.jpeg" alt="foto de alicia">
-                </div>
-                <div class="container_foto">
-                    <p class="nombre">Nelson Subero</p>
-                    <img class="foto" src="./img/nelson.jpeg" alt="foto de nelson">
+                    <div class="col col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">Analisis Microbiológicos</div>
+                    <div class="col col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">Analisis Físico-Químico</div>
+                    <div class="col col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">Analisis Bromatológicos</div>
+                    <div class="col col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">Asesoría y Asistencia técnica</div>
                 </div>
             </div>
-        </article>
+    </section>
+    <section>
+        <h2 class="subtitulo_equipo">Equipo</h2>
+        <div class="container_equipo">
+            <div class="container_foto" data-aos="fade-right">
+                <p class="nombre">Alicia Mendoza</p>
+                <img class="foto" src="./img/alicia.png" alt="foto de alicia">
+            </div>
+            <div class="container_foto" data-aos="fade-left">
+                <p class="nombre">Nelson Subero</p>
+                <img class="foto" src="./img/nelson.png" alt="foto de nelson">
+            </div>
+        </div>
     </section>
     <footer>
         <p class="derechos_protegidos">Derechos Protegidos</p>
@@ -98,6 +98,11 @@
             <li>Telefono</li>
         </ul>
     </footer>
+    <!-- animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

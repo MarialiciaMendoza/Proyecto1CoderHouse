@@ -1,0 +1,62 @@
+@use "variables";
+
+.grid_container{
+    display: grid;
+    grid-template-areas: "header header header" "menu main aside" "footer footer footer";
+}
+.item1{
+   grid-area: header;
+}
+.item2{
+    grid-area: menu;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: aside;
+}
+.item5{
+    grid-area: footer;
+}
+
+.seccion_nosotros{
+    h1{
+        color: variables.$yellow;
+        font-size: variables.$sizeL;
+        margin-left: 50px;
+        padding-right: 50px;
+    }
+    h2{
+        color: variables.$yellow;
+        font-size: variables.$sizeL;
+        margin-left: 50px;
+    }
+    p{
+        padding: 30px;
+        flex-direction: row; 
+    }
+    .contenido_valores{
+        padding: 50px;
+    }
+    @include variables.d-center;
+    font-size: variables.$sizeS;
+    color: white;
+    background: variables.$bg-deg;
+    margin: 50px;
+}
+
+@media (min-width:320px) and (max-width:1024px){
+    .seccion_nosotros{
+        p{
+            font-size: variables.$sizeXs;
+        }
+        h2{
+            padding-top: 50px;
+            padding-right: 50px;
+            
+        }
+        flex-direction: column;
+        font-size: variables.$sizeXs;
+    }
+}

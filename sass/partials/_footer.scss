@@ -1,0 +1,34 @@
+@use "variables";
+
+footer{
+    .derechos_protegidos{
+        .contacto{
+            display:flex;
+        }
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    background-color: black;
+    padding-bottom: 10px;
+}
+footer{
+    ul{
+        li{
+            font-size: variables.$sizeS;
+            color: variables.$celeste;
+            text-align: center;
+            list-style: none;
+        }
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+footer{
+    p{
+        font-size: variables.$sizeS;
+        color: variables.$celeste;
+        text-align: center;
+        list-style: none;
+    }
+}

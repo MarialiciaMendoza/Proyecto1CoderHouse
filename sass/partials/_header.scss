@@ -1,0 +1,22 @@
+@use "variables";
+
+header{
+    nav{
+        ul{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+    .estilos_nav{
+        .logo{
+            height: 100px;
+            width: 100%;
+        }
+        background: white;
+        font-size: variables.$sizeM;
+    }
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
