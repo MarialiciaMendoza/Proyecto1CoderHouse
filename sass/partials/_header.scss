@@ -1,11 +1,11 @@
 @use "variables";
 
 header{
-    nav{
-        ul{
-            width: 100%;
-            justify-content: space-around;
-        }
+    .nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .estilos_nav{
         .logo{
@@ -19,4 +19,12 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1;
+}
+
+@media (min-width:320px) and (max-width:1024px){
+    header{
+        .nav{
+            flex-direction: column;
+        }
+    }
 }

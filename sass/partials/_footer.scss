@@ -1,34 +1,28 @@
 @use "variables";
 
 footer{
-    .derechos_protegidos{
+    .derechos{
         .contacto{
             display:flex;
         }
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     background-color: black;
     padding-bottom: 10px;
+    font-size: variables.$sizeXs;
+    color: white;
+    text-align: center;
+    list-style: none;
 }
 footer{
     ul{
         li{
             font-size: variables.$sizeS;
             color: variables.$celeste;
-            text-align: center;
             list-style: none;
         }
         display:flex;
         justify-content: space-around;
-        align-items: center;
-    }
-}
-footer{
-    p{
-        font-size: variables.$sizeS;
-        color: variables.$celeste;
-        text-align: center;
-        list-style: none;
     }
 }

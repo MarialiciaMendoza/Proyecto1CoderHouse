@@ -3,13 +3,14 @@
 @use "partials/footer";
 @use "partials/nosotros";
 @use "partials/servicios";
+@use "partials/contacto";
 @use "partials/variables";
 
 *{
     margin: 0;
     padding: 0;
 }
-html{
+html, body {
     font-size: 62.5%;
     font-family: 'Mitr', sans-serif;
 }

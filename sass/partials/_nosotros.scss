@@ -25,25 +25,26 @@
         color: variables.$yellow;
         font-size: variables.$sizeL;
         margin-left: 50px;
-        padding-right: 50px;
+        margin-right: 50px;
     }
     h2{
         color: variables.$yellow;
         font-size: variables.$sizeL;
         margin-left: 50px;
+        margin-right: 50px;
     }
     p{
-        padding: 30px;
-        flex-direction: row; 
+        flex-direction: row;
+        padding: 20px;
     }
     .contenido_valores{
-        padding: 50px;
+        padding: 20px;
     }
     @include variables.d-center;
     font-size: variables.$sizeS;
     color: white;
     background: variables.$bg-deg;
-    margin: 50px;
+    margin: 20px;
 }
 
 @media (min-width:320px) and (max-width:1024px){
@@ -52,9 +53,8 @@
             font-size: variables.$sizeXs;
         }
         h2{
-            padding-top: 50px;
-            padding-right: 50px;
-            
+            padding-top: 20px;
+            padding-right: 20px;
         }
         flex-direction: column;
         font-size: variables.$sizeXs;
