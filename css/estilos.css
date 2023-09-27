@@ -300,6 +300,7 @@ footer ul li {
 html, body {
   font-size: 62.5%;
   font-family: "Mitr", sans-serif;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=estilos.css.map */
